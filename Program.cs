@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            try
+            {
+                DailyDiary diary = new DailyDiary();
+                diary.filePath = Path.Combine(Environment.CurrentDirectory, "data.txt");
+                diary.RunDiaryManager();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+
+            }
         }
     }
 }
