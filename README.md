@@ -17,7 +17,7 @@ This console application manages daily diary entries, allowing users to read, ad
   - `DailyDiary.cs`: Class handling diary operations.
   - `Entry.cs`: Represents a diary entry with date and content.
 - **Usage**:
-  - Clone the repository: [GitHub Repo](https://github.com/your-username/Daily-Diary-Manager)
+  - Clone the repository: [GitHub Repo](https://github.com/muathmm/Daily-Diary)
   - Navigate to the project directory: `cd Daily-Diary-Manager`
   - Build and run the application: `dotnet run`
 - **Unit Tests**:
@@ -36,4 +36,4 @@ This console application manages daily diary entries, allowing users to read, ad
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/muathmm/Daily-Diary
+   git clone git@github.com:muathmm/Daily-Diary.git
