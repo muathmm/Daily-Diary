@@ -66,7 +66,7 @@ namespace Daily_Diary
             }
         }
 
-        public void ReadDiaryFile()
+        public bool ReadDiaryFile()
         {
             try
             {
@@ -78,15 +78,18 @@ namespace Daily_Diary
                     {
                         Console.WriteLine(line);
                     }
+                    return true;
                 }
                 else
                 {
                     Console.WriteLine("Diary file does not exist or is empty.");
+                    return false;
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error reading diary file: {ex.Message}");
+                return false;
             }
         }
 
